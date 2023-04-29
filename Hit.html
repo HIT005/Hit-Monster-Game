@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HitMonster-Game</title>
+    <style>
+      .playground {
+        position: relative;
+        background-color: aqua;
+        height: 650px;
+        width: 650px;
+        float: left;
+      }
+      .Monster {
+        position: relative;
+        height: 100px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="playground">
+      <img
+        class="Monster"
+        id="Monster"
+        src="https://www.kindpng.com/picc/m/778-7786826_cute-monster-clipart-black-and-white-fuzzy-hd.png"
+        onclick="HitMon()"
+      />
+    </div>
+    <div class="control">
+      <h3>
+        <span>total</span>
+        <span id="totalHit"></span>
+      </h3>
+      <h2 id="gamestatus"></h2>
+      <button onclick="start()">start-Game</button>
+    </div>
+
+    <script src="Hit.js"></script>
+  </body>
+</html>
